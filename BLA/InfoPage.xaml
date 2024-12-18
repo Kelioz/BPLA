@@ -1,0 +1,61 @@
+﻿<Page x:Class="BLA.InfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BLA"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="InfoPage">
+    
+    <Page.Resources>
+        <Style x:Key="StyledButton" TargetType="Button">
+        <Setter Property="Background" Value="#3C8DBC"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Padding" Value="5"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#2A81B0"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="#205373"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    </Page.Resources>
+
+    <Grid Background="Azure">
+        <TextBlock x:Name="tittleText" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Название " VerticalAlignment="Top" FontSize="25"/>
+        <Image x:Name="detailImage" HorizontalAlignment="Left" Height="232" Margin="33,118,0,0" VerticalAlignment="Top" Width="270" Stretch="Fill" />
+        <TextBlock x:Name="typeText" HorizontalAlignment="Left" Margin="316,118,0,0" VerticalAlignment="Top" FontSize="25">
+            <TextBlock.Inlines>
+                <Run Text="Тип: " FontWeight="Bold"/>
+                <Run Text="{Binding Type}" />
+            </TextBlock.Inlines>
+        </TextBlock>
+        <TextBlock x:Name="discText" Width="600" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="316,158,0,0" VerticalAlignment="Top" FontSize="25" Height="62">
+            <TextBlock.Inlines >
+                <Run Text="Описание: " FontWeight="Bold"/>
+                <Run Text="{Binding Description}"  />
+            </TextBlock.Inlines>
+        </TextBlock>
+        <TextBlock x:Name="charecText" HorizontalAlignment="Left" Margin="316,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25"/>
+        <Button x:Name="uploadButton" Content="Загрузить изображение" HorizontalAlignment="Left" Margin="59,372,0,0" VerticalAlignment="Top" FontSize="20" Width="241" Click="UploadButton_Click" Style="{StaticResource StyledButton}"/>
+
+
+    </Grid>
+</Page>

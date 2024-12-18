@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|c:\\users\\maxkr\\desktop\\guber\\bpla\\bla\\editwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|solutionrelative:bla\\editwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|c:\\users\\maxkr\\desktop\\guber\\bpla\\bla\\addwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|solutionrelative:bla\\addwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\EditWindow.xaml",
+              "RelativeDocumentMoniker": "BLA\\EditWindow.xaml",
+              "ToolTip": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\EditWindow.xaml",
+              "RelativeToolTip": "BLA\\EditWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-18T14:20:29.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\AddWindow.xaml",
+              "RelativeDocumentMoniker": "BLA\\AddWindow.xaml",
+              "ToolTip": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\AddWindow.xaml",
+              "RelativeToolTip": "BLA\\AddWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-18T14:19:46.398Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
