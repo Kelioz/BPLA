@@ -1,0 +1,152 @@
+C:\Users\maxkr\source\repos\BLA\BLA\bin\Debug\BLA.exe.config
+C:\Users\maxkr\source\repos\BLA\BLA\bin\Debug\BLA.exe
+C:\Users\maxkr\source\repos\BLA\BLA\bin\Debug\BLA.pdb
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\BLA.csproj.AssemblyReference.cache
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\MainWindow.g.cs
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\App.g.cs
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\BLA_MarkupCompile.cache
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\BLA_MarkupCompile.lref
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\MainWindow.baml
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\BLA.g.resources
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\BLA.Properties.Resources.resources
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\BLA.csproj.GenerateResource.cache
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\BLA.csproj.CoreCompileInputs.cache
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\BLA.exe
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\BLA.pdb
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\EditWindow.g.cs
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\EditWindow.baml
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\AddWindow.g.cs
+C:\Users\maxkr\source\repos\BLA\BLA\obj\Debug\AddWindow.baml
+C:\Users\Admin\Desktop\новое\BLA\BLA\bin\Debug\BLA.exe.config
+C:\Users\Admin\Desktop\новое\BLA\BLA\bin\Debug\BLA.exe
+C:\Users\Admin\Desktop\новое\BLA\BLA\bin\Debug\BLA.pdb
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\BLA.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\AddWindow.g.cs
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\EditWindow.g.cs
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\BLA_MarkupCompile.cache
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\BLA_MarkupCompile.lref
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\AddWindow.baml
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\EditWindow.baml
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\BLA.g.resources
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\BLA.Properties.Resources.resources
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\BLA.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\BLA.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\BLA.exe
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\BLA.pdb
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\DetailsPage.g.cs
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\DetailsPage.baml
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\LoginWindow.g.cs
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\PartnersPage.g.cs
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\LoginWindow.baml
+C:\Users\Admin\Desktop\новое\BLA\BLA\obj\Debug\PartnersPage.baml
+C:\Users\maxkr\Desktop\BLA\BLA\bin\Debug\BLA.exe.config
+C:\Users\maxkr\Desktop\BLA\BLA\bin\Debug\BLA.exe
+C:\Users\maxkr\Desktop\BLA\BLA\bin\Debug\BLA.pdb
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\BLA.csproj.AssemblyReference.cache
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\AddPartnerWindow.g.cs
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\AddWindow.g.cs
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\DetailsPage.g.cs
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\EditWindow.g.cs
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\LoginWindow.g.cs
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\MainWindow.g.cs
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\PartnersPage.g.cs
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\App.g.cs
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\BLA_MarkupCompile.cache
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\BLA_MarkupCompile.lref
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\AddPartnerWindow.baml
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\AddWindow.baml
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\DetailsPage.baml
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\EditWindow.baml
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\LoginWindow.baml
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\MainWindow.baml
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\PartnersPage.baml
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\BLA.g.resources
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\BLA.Properties.Resources.resources
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\BLA.csproj.GenerateResource.cache
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\BLA.csproj.CoreCompileInputs.cache
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\BLA.exe
+C:\Users\maxkr\Desktop\BLA\BLA\obj\Debug\BLA.pdb
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\bin\Debug\BLA.exe.config
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\bin\Debug\BLA.exe
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\bin\Debug\BLA.pdb
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\BLA.csproj.AssemblyReference.cache
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\AddPartnerWindow.g.cs
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\AddWindow.g.cs
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\DetailsPage.g.cs
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\EditWindow.g.cs
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\LoginWindow.g.cs
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\MainWindow.g.cs
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\PartnersPage.g.cs
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\App.g.cs
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\BLA_MarkupCompile.cache
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\BLA_MarkupCompile.lref
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\AddPartnerWindow.baml
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\AddWindow.baml
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\DetailsPage.baml
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\EditWindow.baml
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\LoginWindow.baml
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\MainWindow.baml
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\PartnersPage.baml
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\BLA.g.resources
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\BLA.Properties.Resources.resources
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\BLA.csproj.GenerateResource.cache
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\BLA.csproj.CoreCompileInputs.cache
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\BLA.exe
+C:\Users\maxkr\Desktop\новое\z\BLA\BLA\obj\Debug\BLA.pdb
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\bin\Debug\BLA.exe.config
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\bin\Debug\BLA.exe
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\bin\Debug\BLA.pdb
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\BLA.csproj.AssemblyReference.cache
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\AddPartnerWindow.g.cs
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\AddWindow.g.cs
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\DetailsPage.g.cs
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\EditWindow.g.cs
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\LoginWindow.g.cs
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\MainWindow.g.cs
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\PartnersPage.g.cs
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\App.g.cs
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\BLA_MarkupCompile.cache
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\BLA_MarkupCompile.lref
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\AddPartnerWindow.baml
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\AddWindow.baml
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\DetailsPage.baml
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\EditWindow.baml
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\LoginWindow.baml
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\MainWindow.baml
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\PartnersPage.baml
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\BLA.g.resources
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\BLA.Properties.Resources.resources
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\BLA.csproj.GenerateResource.cache
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\BLA.csproj.CoreCompileInputs.cache
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\BLA.exe
+C:\Users\maxkr\Desktop\Новая папка (3)\новое\z\BLA\BLA\obj\Debug\BLA.pdb
+E:\ПП\новое\z\BLA\BLA\bin\Debug\BLA.exe.config
+E:\ПП\новое\z\BLA\BLA\bin\Debug\BLA.exe
+E:\ПП\новое\z\BLA\BLA\bin\Debug\BLA.pdb
+E:\ПП\новое\z\BLA\BLA\obj\Debug\BLA.csproj.AssemblyReference.cache
+E:\ПП\новое\z\BLA\BLA\obj\Debug\AddPartnerWindow.g.cs
+E:\ПП\новое\z\BLA\BLA\obj\Debug\AddWindow.g.cs
+E:\ПП\новое\z\BLA\BLA\obj\Debug\DetailsPage.g.cs
+E:\ПП\новое\z\BLA\BLA\obj\Debug\EditWindow.g.cs
+E:\ПП\новое\z\BLA\BLA\obj\Debug\LoginWindow.g.cs
+E:\ПП\новое\z\BLA\BLA\obj\Debug\MainWindow.g.cs
+E:\ПП\новое\z\BLA\BLA\obj\Debug\PartnersPage.g.cs
+E:\ПП\новое\z\BLA\BLA\obj\Debug\App.g.cs
+E:\ПП\новое\z\BLA\BLA\obj\Debug\BLA_MarkupCompile.cache
+E:\ПП\новое\z\BLA\BLA\obj\Debug\BLA_MarkupCompile.lref
+E:\ПП\новое\z\BLA\BLA\obj\Debug\AddPartnerWindow.baml
+E:\ПП\новое\z\BLA\BLA\obj\Debug\AddWindow.baml
+E:\ПП\новое\z\BLA\BLA\obj\Debug\DetailsPage.baml
+E:\ПП\новое\z\BLA\BLA\obj\Debug\EditWindow.baml
+E:\ПП\новое\z\BLA\BLA\obj\Debug\LoginWindow.baml
+E:\ПП\новое\z\BLA\BLA\obj\Debug\MainWindow.baml
+E:\ПП\новое\z\BLA\BLA\obj\Debug\PartnersPage.baml
+E:\ПП\новое\z\BLA\BLA\obj\Debug\BLA.g.resources
+E:\ПП\новое\z\BLA\BLA\obj\Debug\BLA.Properties.Resources.resources
+E:\ПП\новое\z\BLA\BLA\obj\Debug\BLA.csproj.GenerateResource.cache
+E:\ПП\новое\z\BLA\BLA\obj\Debug\BLA.csproj.CoreCompileInputs.cache
+E:\ПП\новое\z\BLA\BLA\obj\Debug\BLA.exe
+E:\ПП\новое\z\BLA\BLA\obj\Debug\BLA.pdb
