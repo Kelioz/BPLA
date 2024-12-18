@@ -41,7 +41,7 @@
     <Grid Margin="10">
         <Border Background="White" CornerRadius="10" Padding="10">
             <Grid>
-                <DataGrid x:Name="DetailsData" AutoGenerateColumns="False" Margin="10,10,140,10" 
+                <DataGrid x:Name="DetailsData" AutoGenerateColumns="False" Margin="0,0,133,0" 
                           CanUserAddRows="False" RowBackground="#F9F9F9" AlternatingRowBackground="#E8E8E8"
                           GridLinesVisibility="Horizontal" HorizontalGridLinesBrush="#D3D3D3" VerticalGridLinesBrush="#D3D3D3"
                           BorderBrush="Transparent" ColumnHeaderHeight="35" RowHeight="30">
@@ -94,6 +94,8 @@
                                                 Style="{StaticResource StyledButton}"/>
                                         <Button Content="Удалить" Margin="5,0" Click="DeleteButton_Click" Tag="{Binding id}" Width="70" 
                                                 Style="{StaticResource StyledButton}"/>
+                                        <Button Content="Подробнее" Margin="5,0" Tag="{Binding id}" Width="70" 
+                                                Style="{StaticResource StyledButton}" Click="Button_Click"/>
                                     </StackPanel>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>

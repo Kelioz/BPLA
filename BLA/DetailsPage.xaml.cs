@@ -102,7 +102,29 @@ namespace BLA
         private void AddDetailsBtn_Click(object sender, RoutedEventArgs e)
         {
             AddWindow addWindow = new AddWindow();
-            addWindow.Show();
+            addWindow.ShowDialog();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null && button.Tag != null)
+            {
+                int id = int.Parse(button.Tag.ToString());
+
+                DataRowView row = (DataRowView)DetailsData.SelectedItem;
+                if (row != null)
+                {
+                    string name = row["Name"].ToString();
+                    int count = int.Parse(row["Count"].ToString());
+                    string type = row["Type"].ToString();
+                    decimal price = decimal.Parse(row["Price_For_One"].ToString());
+
+                    InfoPage editWindow = new InfoPage(id, name, count, type, price);
+                    NavigationService.Navigate(editWindow);
+
+                }
+            }
         }
     }
 }
