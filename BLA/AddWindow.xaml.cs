@@ -31,11 +31,14 @@ namespace BLA
             DB db = new DB();
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable table = new DataTable();
-            SqlCommand cmd = new SqlCommand(@"Insert Into Datails (Name, Count, Type, Price_For_One) Values (@Name, @Count, @Type, @PFO)", db.GetConnection() );
+            SqlCommand cmd = new SqlCommand(@"Insert Into Datails (Name, Count, Type, Price_For_One, Description, Characteristics) Values (@Name, @Count, @Type, @PFO, @Disc, @Char )", db.GetConnection() );
             cmd.Parameters.Add("@Name", SqlDbType.VarChar).Value = NameTextBox.Text;
             cmd.Parameters.Add("@Count", SqlDbType.Int).Value = Convert.ToInt32(CountTextBox.Text);
             cmd.Parameters.Add("@Type", SqlDbType.VarChar).Value = TypeTextBox.Text;
             cmd.Parameters.Add("@PFO", SqlDbType.Int).Value = Convert.ToInt32(PriceTextBox.Text);
+            cmd.Parameters.Add("@Disc", SqlDbType.VarChar).Value = discBox.Text;
+            cmd.Parameters.Add("@Char", SqlDbType.VarChar).Value = charBox.Text;
+
             adapter.SelectCommand = cmd;
             adapter.Fill(table);
             this.Close();

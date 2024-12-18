@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BLA"
         mc:Ignorable="d"
-        Title="Главное окно" Height="650" Width="1000" Icon="assets/icon.ico">
+        Title="Главное окно" Height="650" Width="1000" Icon="assets/icon.ico" MinHeight="650" MinWidth="1000">
 
     <Window.Resources>
         <Style x:Key="StyledButton" TargetType="Button">

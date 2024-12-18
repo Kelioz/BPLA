@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BLA"
         mc:Ignorable="d"
-        Title="Добавить" Height="500" Width="250" WindowStartupLocation="CenterScreen" Icon="assets/icon.ico">
+        Title="Добавить" Height="800" Width="340" WindowStartupLocation="CenterScreen" Icon="assets/icon.ico" MinHeight="800" MinWidth="340" MaxHeight="900" MaxWidth="400">
 
     <Window.Resources>
         <!-- Стиль кнопок -->
@@ -67,6 +67,12 @@
 
             <Label Content="Цена за штуку р." />
             <TextBox x:Name="PriceTextBox" Height="30" />
+
+            <Label Content="Описание" />
+            <TextBox x:Name="discBox" Height="90" TextWrapping="Wrap" Text="" VerticalContentAlignment="Top"/>
+
+            <Label Content="Характеристики  (для переноса строки /n )"  />
+            <TextBox x:Name="charBox" Height="90" TextWrapping="Wrap" Text="" VerticalContentAlignment="Top"/>
 
             <Button x:Name="addBtn" Content="Добавить" Height="40" Width="120" Style="{StaticResource StyledButton}" Margin="0,20,0,0" HorizontalAlignment="Center" Click="addBtn_Click" />
         </StackPanel>
