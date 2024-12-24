@@ -28,7 +28,7 @@ namespace BLA
 
         private void helpBtn_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Тут тебе поиогут 01");
+            MessageBox.Show("Позвоните системному администратору на номер +7 999 999 99 99", "Помощь" , MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)

@@ -16,11 +16,15 @@ namespace BLA
         public string Characteristics { get; set; }
         public string imgPath { get; set; }
         public int ID { get; set; }
+        public decimal price { get; set; }
+        public int count { get; set; }
 
         public InfoPage(int id, string name, int count, string type, decimal price)
         {
             InitializeComponent();
+            this.price = price;
             tittleText.Text += name;
+            this.count = count;
             typeText.Inlines.Add(new Run(type));
             this.ID = id;
             getDetailsInfo(id);
@@ -47,6 +51,8 @@ namespace BLA
                     this.Characteristics = charac;
 
                     discText.Inlines.Add(new Run(Description));
+                    priceText.Inlines.Add(new Run(this.price.ToString()));
+                    countText.Inlines.Add(new Run($"{this.count} шт."));
                     string[] characLines = Characteristics.Split(new[] { "/n" }, StringSplitOptions.None);
                     charecText.Inlines.Clear();
                     charecText.Inlines.Add(new Run("Характеристики: ") { FontWeight = FontWeights.Bold });

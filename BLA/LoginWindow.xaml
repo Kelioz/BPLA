@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BLA"
         mc:Ignorable="d"
-        Title="Вход" Height="370" Width="280" WindowStartupLocation="CenterScreen" Icon="assets/icon.ico">
+        Title="Вход" Height="370" Width="280" WindowStartupLocation="CenterScreen" Icon="assets/icon.ico" MaxHeight="400" MaxWidth="300" MinWidth="280" MinHeight="370">
 
     <Window.Resources>
         <!-- Стиль кнопок -->

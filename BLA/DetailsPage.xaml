@@ -90,11 +90,11 @@
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                        <Button Content="Изменить" Margin="5,0" Click="EditButton_Click" Tag="{Binding id}" Width="70" 
+                                        <Button Content="Изменить" Margin="5,0" Click="EditButton_Click" Height="23" Tag="{Binding id}" Width="70" 
                                                 Style="{StaticResource StyledButton}"/>
-                                        <Button Content="Удалить" Margin="5,0" Click="DeleteButton_Click" Tag="{Binding id}" Width="70" 
+                                        <Button Content="Удалить" Margin="5,0" Click="DeleteButton_Click" Height="23" Tag="{Binding id}" Width="70" 
                                                 Style="{StaticResource StyledButton}"/>
-                                        <Button Content="Подробнее" Margin="5,0" Tag="{Binding id}" Width="70" 
+                                        <Button Content="Подробнее" Margin="5,0" Tag="{Binding id}" Width="70" Height="23" 
                                                 Style="{StaticResource StyledButton}" Click="Button_Click"/>
                                     </StackPanel>
                                 </DataTemplate>

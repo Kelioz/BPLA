@@ -5,40 +5,40 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:BLA"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="550" d:DesignWidth="900"
       Title="InfoPage">
-    
+
     <Page.Resources>
         <Style x:Key="StyledButton" TargetType="Button">
-        <Setter Property="Background" Value="#3C8DBC"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="FontSize" Value="14"/>
-        <Setter Property="FontWeight" Value="Bold"/>
-        <Setter Property="Padding" Value="5"/>
-        <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Button">
-                    <Border Background="{TemplateBinding Background}" CornerRadius="5">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#2A81B0"/>
-            </Trigger>
-            <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="#205373"/>
-            </Trigger>
-        </Style.Triggers>
-    </Style>
+            <Setter Property="Background" Value="#3C8DBC"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#2A81B0"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#205373"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
     </Page.Resources>
 
-    <Grid Background="Azure">
+    <Grid Background="#F4F4F4">
         <TextBlock x:Name="tittleText" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Название " VerticalAlignment="Top" FontSize="25"/>
         <Image x:Name="detailImage" HorizontalAlignment="Left" Height="232" Margin="33,118,0,0" VerticalAlignment="Top" Width="270" Stretch="Fill" />
         <TextBlock x:Name="typeText" HorizontalAlignment="Left" Margin="316,118,0,0" VerticalAlignment="Top" FontSize="25">
@@ -51,6 +51,18 @@
             <TextBlock.Inlines >
                 <Run Text="Описание: " FontWeight="Bold"/>
                 <Run Text="{Binding Description}"  />
+            </TextBlock.Inlines>
+        </TextBlock>
+        <TextBlock x:Name="priceText" Width="600" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="316,385,0,0" VerticalAlignment="Top" FontSize="25" Height="62">
+            <TextBlock.Inlines >
+                <Run Text="Цена за штуку р.: " FontWeight="Bold"/>
+                <Run Text="{Binding Price}"  />
+            </TextBlock.Inlines>
+        </TextBlock>
+        <TextBlock x:Name="countText" Width="600" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="316,437,0,0" VerticalAlignment="Top" FontSize="25" Height="62">
+            <TextBlock.Inlines >
+                <Run Text="Количество:  " FontWeight="Bold"/>
+                <Run Text="{Binding Count}"  />
             </TextBlock.Inlines>
         </TextBlock>
         <TextBlock x:Name="charecText" HorizontalAlignment="Left" Margin="316,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25"/>
