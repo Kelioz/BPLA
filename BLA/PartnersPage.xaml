@@ -9,8 +9,9 @@
       Title="PartnersPage">
 
     <Page.Resources>
-        <Style x:Key="StyledButton" TargetType="Button">
-            <Setter Property="Background" Value="#3C8DBC"/>
+        <!-- Стиль кнопок -->
+        <Style x:Key="DarkButton" TargetType="Button">
+            <Setter Property="Background" Value="#333333"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="FontWeight" Value="Bold"/>
@@ -21,7 +22,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="8">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
@@ -29,23 +30,31 @@
             </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#2A81B0"/>
+                    <Setter Property="Background" Value="#444444"/>
                 </Trigger>
                 <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="#205373"/>
+                    <Setter Property="Background" Value="#555555"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
     </Page.Resources>
 
-    <Grid>
-        <ListView x:Name="partnersList" d:ItemsSource="{d:SampleData ItemCount=5}"  Margin="10,0,120,0" FontSize="18">
+    <Grid Background="#1C1C1C" Margin="0,0,-12,0">
+        <!-- Панель для кнопок -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,9,20,0">
+            <Button x:Name="addPartnerBtn" Content="Добавить" Height="40" Width="120" Style="{StaticResource DarkButton}" Click="addPartnerBtn_Click"/>
+            <Button x:Name="updateBtn" Content="Обновить" Height="40" Width="120" Margin="10,0,0,0" Style="{StaticResource DarkButton}" Click="updateBtn_Click"/>
+            <Button x:Name="deletePartnerBtn" Content="Удалить" Height="40" Width="120" Margin="10,0,0,0" Style="{StaticResource DarkButton}" Click="deletePartnerBtn_Click" IsEnabled="False"/>
+        </StackPanel>
+
+        <!-- Список партнёров -->
+        <ListView x:Name="partnersList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,60,135,0" FontSize="24" Background="Transparent" SelectionChanged="partnersList_SelectionChanged">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="AUto"/>
+                            <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="300"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
@@ -55,23 +64,19 @@
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-                        <TextBlock Text="Название компании: " Grid.Column="0" Grid.Row="0"/>
-                        <TextBlock Text="{Binding Name}" Grid.Column="1" Grid.Row="0"/>
-                        <TextBlock Text="ФИО директора" Grid.Column="0" Grid.Row="1"/>
-                        <TextBlock Text="{Binding FIO}" Grid.Column="1" Grid.Row="1"/>
-                        <TextBlock Text="Номер Телефона: " Grid.Column="0" Grid.Row="2"/>
-                        <TextBlock Text="{Binding Phone}" Grid.Column="1" Grid.Row="2"/>
-                        <TextBlock Text="ИНН компании" Grid.Column="0" Grid.Row="3"/>
-                        <TextBlock Text="{Binding INN}" Grid.Column="1" Grid.Row="3"/>
-                        <TextBlock Text="Адресс компании" Grid.Column="0" Grid.Row="4"/>
-                        <TextBlock Text="{Binding Adress}" Grid.Column="1" Grid.Row="4"/>
-
-                        <Button HorizontalAlignment="Right" Tag="{Binding id}" Content="Удалить" x:Name="deltePartnerBtn" Height="25" Grid.Column="2" Grid.Row="2" Width="100" Style="{StaticResource StyledButton}" Click="deltePartnerBtn_Click"/>
+                        <TextBlock Text="Название компании: " Grid.Column="0" Grid.Row="0" Foreground="White"/>
+                        <TextBlock Text="{Binding Name}" Grid.Column="1" Grid.Row="0" Foreground="White"/>
+                        <TextBlock Text="ФИО директора" Grid.Column="0" Grid.Row="1" Foreground="White"/>
+                        <TextBlock Text="{Binding FIO}" Grid.Column="1" Grid.Row="1" Foreground="White"/>
+                        <TextBlock Text="Номер Телефона: " Grid.Column="0" Grid.Row="2" Foreground="White"/>
+                        <TextBlock Text="{Binding Phone}" Grid.Column="1" Grid.Row="2" Foreground="White"/>
+                        <TextBlock Text="ИНН компании" Grid.Column="0" Grid.Row="3" Foreground="White"/>
+                        <TextBlock Text="{Binding INN}" Grid.Column="1" Grid.Row="3" Foreground="White"/>
+                        <TextBlock Text="Адресс компании" Grid.Column="0" Grid.Row="4" Foreground="White"/>
+                        <TextBlock Text="{Binding Adress}" Grid.Column="1" Grid.Row="4" Foreground="White"/>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="addPartnerBtn" Content="Добавить" HorizontalAlignment="Right" Margin="0,9,10,0" VerticalAlignment="Top" Height="36" Width="94" Style="{StaticResource StyledButton}" Click="addPartnerBtn_Click"/>
-        <Button x:Name="updateBtn" Content="Обновить" HorizontalAlignment="Right" Margin="0,54,10,0" VerticalAlignment="Top" Height="36" Width="94" Style="{StaticResource StyledButton}" Click="updateBtn_Click"/>
     </Grid>
 </Page>

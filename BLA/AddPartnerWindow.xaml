@@ -1,26 +1,27 @@
 ﻿<Window x:Class="BLA.AddPartnerWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.expression.blend/2008"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BLA"
         mc:Ignorable="d"
         Title="Добавить партнёра" Height="600" Width="300" Icon="assets/icon.ico" MinHeight="500" MinWidth="280" MaxHeight="650" MaxWidth="800">
 
     <Window.Resources>
-        <!-- Стиль кнопок -->
-        <Style x:Key="StyledButton" TargetType="Button">
-            <Setter Property="Background" Value="#3C8DBC"/>
+        <!-- Темный стиль для кнопок -->
+        <Style x:Key="DarkButton" TargetType="Button">
+            <Setter Property="Background" Value="#333333"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Padding" Value="5"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="8">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
@@ -28,21 +29,23 @@
             </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#2A81B0"/>
+                    <Setter Property="Background" Value="#444444"/>
                 </Trigger>
                 <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="#205373"/>
+                    <Setter Property="Background" Value="#555555"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
 
-        <!-- Стиль текстовых полей -->
+        <!-- Стиль для текстовых полей -->
         <Style TargetType="TextBox">
             <Setter Property="Margin" Value="0,5,0,10"/>
             <Setter Property="Padding" Value="5"/>
             <Setter Property="FontSize" Value="14"/>
-            <Setter Property="BorderBrush" Value="#3C8DBC"/>
+            <Setter Property="BorderBrush" Value="#444444"/>
             <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="#2A2A2A"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
         </Style>
 
@@ -50,11 +53,11 @@
         <Style TargetType="Label">
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="Margin" Value="0,10,0,5"/>
-            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
         </Style>
     </Window.Resources>
 
-    <Grid>
+    <Grid Background="#1C1C1C">
         <StackPanel Orientation="Vertical" Margin="20">
             <Label Content="Название компании" />
             <TextBox x:Name="nameCompanyBox" Height="30" />
@@ -71,7 +74,7 @@
             <Label Content="Адрес" />
             <TextBox x:Name="adressBox" Height="30" />
 
-            <Button Height="40" Width="258" Content="Добавить" Click="Button_Click" Style="{StaticResource StyledButton}" Margin="0,20,0,0" HorizontalAlignment="Center"/>
+            <Button Height="40" Width="258" Content="Добавить" Click="Button_Click" Style="{StaticResource DarkButton}" Margin="0,20,0,0" HorizontalAlignment="Center"/>
         </StackPanel>
     </Grid>
 </Window>

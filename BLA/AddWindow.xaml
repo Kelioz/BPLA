@@ -8,19 +8,20 @@
         Title="Добавить" Height="800" Width="340" WindowStartupLocation="CenterScreen" Icon="assets/icon.ico" MinHeight="800" MinWidth="340" MaxHeight="900" MaxWidth="400">
 
     <Window.Resources>
-        <!-- Стиль кнопок -->
-        <Style x:Key="StyledButton" TargetType="Button">
-            <Setter Property="Background" Value="#3C8DBC"/>
+        <!-- Темный стиль для кнопок -->
+        <Style x:Key="DarkButton" TargetType="Button">
+            <Setter Property="Background" Value="#333333"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Padding" Value="5"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="8">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
@@ -28,21 +29,23 @@
             </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#2A81B0"/>
+                    <Setter Property="Background" Value="#444444"/>
                 </Trigger>
                 <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="#205373"/>
+                    <Setter Property="Background" Value="#555555"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
 
-        <!-- Стиль текстовых полей -->
+        <!-- Стиль для текстовых полей -->
         <Style TargetType="TextBox">
             <Setter Property="Margin" Value="0,5,0,10"/>
             <Setter Property="Padding" Value="5"/>
             <Setter Property="FontSize" Value="14"/>
-            <Setter Property="BorderBrush" Value="#3C8DBC"/>
+            <Setter Property="BorderBrush" Value="#444444"/>
             <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="#2A2A2A"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
         </Style>
 
@@ -50,11 +53,11 @@
         <Style TargetType="Label">
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="Margin" Value="0,10,0,5"/>
-            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
         </Style>
     </Window.Resources>
 
-    <Grid>
+    <Grid Background="#1C1C1C" >
         <StackPanel Orientation="Vertical" Margin="20">
             <Label Content="Название" />
             <TextBox x:Name="NameTextBox" Height="30" />
@@ -69,12 +72,12 @@
             <TextBox x:Name="PriceTextBox" Height="30" />
 
             <Label Content="Описание" />
-            <TextBox x:Name="discBox" Height="90" TextWrapping="Wrap" Text="" VerticalContentAlignment="Top"/>
+            <TextBox x:Name="discBox" Height="90" TextWrapping="Wrap" VerticalContentAlignment="Top"/>
 
-            <Label Content="Характеристики  (для переноса строки /n )"  />
-            <TextBox x:Name="charBox" Height="90" TextWrapping="Wrap" Text="" VerticalContentAlignment="Top"/>
+            <Label Content="Характеристики  (для переноса строки /n )" />
+            <TextBox x:Name="charBox" Height="90" TextWrapping="Wrap" VerticalContentAlignment="Top"/>
 
-            <Button x:Name="addBtn" Content="Добавить" Height="40" Width="120" Style="{StaticResource StyledButton}" Margin="0,20,0,0" HorizontalAlignment="Center" Click="addBtn_Click" />
+            <Button x:Name="addBtn" Content="Добавить" Height="40" Width="120" Style="{StaticResource DarkButton}" Margin="0,20,0,0" HorizontalAlignment="Center" Click="addBtn_Click" />
         </StackPanel>
     </Grid>
 </Window>

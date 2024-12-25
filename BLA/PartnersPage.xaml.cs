@@ -21,21 +21,24 @@ namespace BLA
     /// </summary>
     public partial class PartnersPage : Page
     {
+        private Parnetrs selectedPartner;
+
         public PartnersPage()
         {
             InitializeComponent();
             InitTable();
         }
-        public class Parnetrs 
+
+        public class Parnetrs
         {
-            public int id { get; set; }    
-            public string Name { get; set; }    
-            public string FIO { get; set; }    
-            public long Phone { get; set; }    
-            public long INN { get; set; }    
-            public string Adress { get; set; }    
-  
+            public int id { get; set; }
+            public string Name { get; set; }
+            public string FIO { get; set; }
+            public long Phone { get; set; }
+            public long INN { get; set; }
+            public string Adress { get; set; }
         }
+
         void InitTable()
         {
             List<Parnetrs> list = new List<Parnetrs>();
@@ -45,7 +48,7 @@ namespace BLA
             SqlDataReader rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
-                list.Add(new Parnetrs 
+                list.Add(new Parnetrs
                 {
                     id = Convert.ToInt32(rdr["id"]),
                     Name = rdr["Name"].ToString(),
@@ -59,12 +62,17 @@ namespace BLA
             partnersList.ItemsSource = list;
         }
 
-        private void deltePartnerBtn_Click(object sender, RoutedEventArgs e)
+        private void partnersList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Button button = sender as Button;
-            if (button != null && button.Tag != null)
+            selectedPartner = partnersList.SelectedItem as Parnetrs;
+            deletePartnerBtn.IsEnabled = selectedPartner != null; // Активировать кнопку, если выбран элемент
+        }
+
+        private void deletePartnerBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (selectedPartner != null)
             {
-                int id = int.Parse(button.Tag.ToString());
+                int id = selectedPartner.id;
 
                 // Удаляем запись из базы данных
                 MessageBoxResult result = MessageBox.Show("Вы уверены, что хотите удалить эту запись?", "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Warning);
@@ -83,6 +91,7 @@ namespace BLA
                         MessageBox.Show("Запись успешно удалена!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
 
                         InitTable();
+                        deletePartnerBtn.IsEnabled = false; // После удаления кнопка снова становится неактивной
                     }
                     catch (Exception ex)
                     {

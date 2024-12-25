@@ -27,25 +27,34 @@ namespace BLA
             InitializeComponent();
             DetailsPage detailsPage = new DetailsPage();
             MainFrame.Content = detailsPage;
+
+            if (MainFrame.Content == detailsPage)
+            {
+                homePageBtn.Background = Brushes.DimGray;
+            }
         }
 
         private void toPartnersBtn_Click(object sender, RoutedEventArgs e)
         {
             PartnersPage partnersPage = new PartnersPage();
             MainFrame.Navigate(partnersPage);
+            Brush brush = new SolidColorBrush(Color.FromArgb(30, 255, 255, 255));
+            Brush brush1 = new SolidColorBrush(Color.FromArgb(1, 255, 255, 255));
+            homePageBtn.Background = brush1;
+            partnerPageBtn.Background = brush;
+            SettingsBtn.Background = brush1;
+            aboutBtn.Background = brush1;
         }
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
         {
             if (MainFrame.CanGoBack)
             {
-                toPartnersBtn.Visibility = Visibility.Hidden;
-                BackBtn.Visibility = Visibility.Visible;
+
             }
             else
             {
-                toPartnersBtn.Visibility = Visibility.Visible;
-                BackBtn.Visibility = Visibility.Hidden;
+
             }
         }
 
@@ -58,14 +67,40 @@ namespace BLA
         {
             if (MainFrame.CanGoBack)
             {
-                toPartnersBtn.Visibility = Visibility.Hidden;
-                BackBtn.Visibility = Visibility.Visible;
+
             }
             else
             {
-                toPartnersBtn.Visibility = Visibility.Visible;
-                BackBtn.Visibility = Visibility.Hidden;
+
             }
+        }
+
+        private void homePageBtn_Click(object sender, RoutedEventArgs e)
+        {
+            DetailsPage detailsPage = new DetailsPage();
+            MainFrame.Navigate(detailsPage);
+
+            Brush brush = new SolidColorBrush(Color.FromArgb(30, 255, 255, 255));
+            Brush brush1 = new SolidColorBrush(Color.FromArgb(1, 255, 255, 255));
+            homePageBtn.Background = brush;
+            partnerPageBtn.Background = brush1;
+            SettingsBtn.Background = brush1;
+            aboutBtn.Background = brush1;
+            
+
+        }
+
+        private void SettingsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SettingsPage detailsPage = new SettingsPage();
+            MainFrame.Navigate(detailsPage);
+
+            Brush brush = new SolidColorBrush(Color.FromArgb(30, 255, 255, 255));
+            Brush brush1 = new SolidColorBrush(Color.FromArgb(1, 255, 255, 255));
+            homePageBtn.Background = brush1;
+            partnerPageBtn.Background = brush1;
+            SettingsBtn.Background = brush;
+            aboutBtn.Background = brush1;
         }
     }       
 }
