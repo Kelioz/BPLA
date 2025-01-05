@@ -5,9 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BLA"
         mc:Ignorable="d"
-        Title="Главное окно" Height="650" Width="1400" Icon="assets/icon.ico" MinHeight="650" MinWidth="1000">
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        Title="Главное окно" Height="650" Width="1400" Icon="assets/icon.ico" MinHeight="650" MinWidth="1000" WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
+        <Style x:Key="WindowControlButton" TargetType="Button">
+            <Setter Property="Background" Value="#222222"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="8">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#444444"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#555555"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
         <!-- Тёмный стиль для кнопок -->
         <Style x:Key="DarkButton" TargetType="Button">
             <Setter Property="Background" Value="#333333"/>
@@ -65,14 +95,22 @@
     </Window.Resources>
 
     <Grid Background="#1C1C1C">
-        <!-- Верхнее меню -->
-        <Menu Background="#222222" Height="40" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" FontSize="14">
-            <MenuItem Header="Fly Engine" IsEnabled="False">
-                <MenuItem.Icon>
-                    <Image Source="assets/icon.png" Height="24" Width="24" Margin="0,0,10,0"/>
-                </MenuItem.Icon>
-            </MenuItem>
-        </Menu>
+        <!-- Верхняя панель с кнопками управления окном -->
+        <DockPanel VerticalAlignment="Top" Height="40" Background="#222222">
+            <!-- Область перетаскивания окна -->
+            <Border Background="Transparent" DockPanel.Dock="Left" Width="1200" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+                <Grid>
+                    <Label Content="Fly Engine" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" FontWeight="Bold" FontSize="16" Margin="10,0,0,0"/>
+                </Grid>
+            </Border>
+
+            <!-- Кнопки управления окном -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Right">
+                <Button x:Name="MinimizeButton" Content="–" Width="40" Height="40" Style="{StaticResource WindowControlButton}" Click="MinimizeButton_Click"/>
+                <Button x:Name="MaximizeButton" Content="☐" Width="40" Height="40" Style="{StaticResource WindowControlButton}" Click="MaximizeButton_Click"/>
+                <Button x:Name="CloseButton" Content="✕" Width="40" Height="40" Style="{StaticResource WindowControlButton}" Click="CloseButton_Click"/>
+            </StackPanel>
+        </DockPanel>
 
         <!-- Сайдбар -->
         <DockPanel>
@@ -81,7 +119,7 @@
                 <Button x:Name="homePageBtn" Content="Главная" Style="{StaticResource DarkSidebarButton}" Click="homePageBtn_Click" FontSize="20"/>
                 <Button x:Name="partnerPageBtn" Content="Партнёры" Style="{StaticResource DarkSidebarButton}" Click="toPartnersBtn_Click" FontSize="20"/>
                 <Button x:Name="SettingsBtn" Content="Настройки" Style="{StaticResource DarkSidebarButton}" FontSize="20" Click="SettingsBtn_Click"/>
-                <Button x:Name="aboutBtn" Content="О приложении" Style="{StaticResource DarkSidebarButton}" FontSize="20"/>
+                <Button x:Name="aboutBtn" Content="О приложении" Style="{StaticResource DarkSidebarButton}" FontSize="20" Click="aboutBtn_Click"/>
             </StackPanel>
 
             <!-- Основной контент -->

@@ -211,3 +211,5 @@ C:\Users\maxkr\Desktop\guber\BPLA\BLA\bin\Debug\System.ValueTuple.xml
 C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\BLA.csproj.Up2Date
 C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\SettingsPage.g.cs
 C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\SettingsPage.baml
+C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\AboutPage.g.cs
+C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\AboutPage.baml

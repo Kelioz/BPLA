@@ -69,6 +69,6 @@
         <TextBlock Foreground="White" x:Name="charecText" HorizontalAlignment="Left" Margin="316,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25"/>
 
         <!-- Updated Button with DarkButton Style -->
-        <Button x:Name="uploadButton" Content="Загрузить изображение" HorizontalAlignment="Left" Margin="53,372,0,0" VerticalAlignment="Top" FontSize="20" Width="241" Click="UploadButton_Click" Style="{StaticResource DarkButton}"/>
+        <Button x:Name="uploadButton" Content="Загрузить изображение" HorizontalAlignment="Left" Margin="51,372,0,0" VerticalAlignment="Top" FontSize="20" Width="241" Click="UploadButton_Click" Style="{StaticResource DarkButton}"/>
     </Grid>
 </Page>

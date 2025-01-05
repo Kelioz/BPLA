@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|solutionrelative:bla\\settingspage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\bla\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|solutionrelative:bla\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\bla\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|solutionrelative:bla\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\bla\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|c:\\users\\maxkr\\desktop\\guber\\bpla\\bla\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|solutionrelative:bla\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\bla\\infopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|solutionrelative:bla\\infopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|c:\\users\\maxkr\\desktop\\guber\\bpla\\bla\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|solutionrelative:bla\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|c:\\users\\maxkr\\desktop\\guber\\bpla\\bla\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|solutionrelative:bla\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|c:\\users\\maxkr\\desktop\\guber\\bpla\\bla\\detailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9648887F-7DE6-4EB6-9BC3-BE4CA1D147D6}|BLA\\BLA.csproj|solutionrelative:bla\\detailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,21 +40,22 @@
               "RelativeDocumentMoniker": "BLA\\SettingsPage.xaml.cs",
               "ToolTip": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\SettingsPage.xaml.cs",
               "RelativeToolTip": "BLA\\SettingsPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAACMAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwCcAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T17:47:48.544Z",
+              "WhenOpened": "2025-01-05T20:57:10.315Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SettingsPage.xaml",
               "DocumentMoniker": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\SettingsPage.xaml",
               "RelativeDocumentMoniker": "BLA\\SettingsPage.xaml",
               "ToolTip": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\SettingsPage.xaml",
               "RelativeToolTip": "BLA\\SettingsPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-25T17:46:50.029Z"
+              "WhenOpened": "2025-01-05T20:57:07.688Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -64,31 +65,34 @@
               "RelativeDocumentMoniker": "BLA\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\MainWindow.xaml.cs",
               "RelativeToolTip": "BLA\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAYwGUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAUwDcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T17:27:17.331Z"
+              "WhenOpened": "2025-01-05T20:50:01.038Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\MainWindow.xaml",
               "RelativeDocumentMoniker": "BLA\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\MainWindow.xaml",
               "RelativeToolTip": "BLA\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-25T17:26:28.485Z"
+              "WhenOpened": "2025-01-05T20:31:05.902Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "InfoPage.xaml",
-              "DocumentMoniker": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\InfoPage.xaml",
-              "RelativeDocumentMoniker": "BLA\\InfoPage.xaml",
-              "ToolTip": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\InfoPage.xaml",
-              "RelativeToolTip": "BLA\\InfoPage.xaml",
+              "Title": "DetailsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\DetailsPage.xaml",
+              "RelativeDocumentMoniker": "BLA\\DetailsPage.xaml",
+              "ToolTip": "C:\\Users\\maxkr\\Desktop\\guber\\BPLA\\BLA\\DetailsPage.xaml",
+              "RelativeToolTip": "BLA\\DetailsPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-25T17:22:05.729Z"
+              "WhenOpened": "2025-01-05T20:31:02.31Z",
+              "EditorCaption": ""
             }
           ]
         }

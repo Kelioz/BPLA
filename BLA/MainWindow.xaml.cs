@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BLA.utils;
 
 namespace BLA
 {
@@ -32,7 +33,36 @@ namespace BLA
             {
                 homePageBtn.Background = Brushes.DimGray;
             }
+
+
+
         }
+        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void MinimizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void MaximizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.WindowState == WindowState.Maximized)
+                this.WindowState = WindowState.Normal;
+            else
+                this.WindowState = WindowState.Maximized;
+        }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
 
         private void toPartnersBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -92,7 +122,7 @@ namespace BLA
 
         private void SettingsBtn_Click(object sender, RoutedEventArgs e)
         {
-            SettingsPage detailsPage = new SettingsPage();
+            SettingsPage detailsPage = new SettingsPage(this);
             MainFrame.Navigate(detailsPage);
 
             Brush brush = new SolidColorBrush(Color.FromArgb(30, 255, 255, 255));
@@ -101,6 +131,19 @@ namespace BLA
             partnerPageBtn.Background = brush1;
             SettingsBtn.Background = brush;
             aboutBtn.Background = brush1;
+        }
+
+        private void aboutBtn_Click(object sender, RoutedEventArgs e)
+        {
+            AboutPage detailsPage = new AboutPage();
+            MainFrame.Navigate(detailsPage);
+
+            Brush brush = new SolidColorBrush(Color.FromArgb(30, 255, 255, 255));
+            Brush brush1 = new SolidColorBrush(Color.FromArgb(1, 255, 255, 255));
+            homePageBtn.Background = brush1;
+            partnerPageBtn.Background = brush1;
+            SettingsBtn.Background = brush1;
+            aboutBtn.Background = brush;
         }
     }       
 }
