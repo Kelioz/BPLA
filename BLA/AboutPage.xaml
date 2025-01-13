@@ -46,7 +46,7 @@
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="508" Width="1104"  >
                     <TextBlock Text="О приложении" Foreground="White" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
                     <TextBlock Text="Версия: 0.2.1" Foreground="White" FontSize="20" HorizontalAlignment="Center" />
-                    <TextBlock Text="Разработано: Ваше Имя" Foreground="White" FontSize="20" HorizontalAlignment="Center" Margin="0 0 0 20"/>
+                    <TextBlock Text="Разработано: Крюков Максим inc." Foreground="White" FontSize="20" HorizontalAlignment="Center" Margin="0 0 0 20"/>
                     <TextBlock Text="Описание приложения: Данное приложение предназначено для учёта запчастей, используемых в беспилотных летательных аппаратах (БПЛА). Приложение предоставляет возможность добавления, изменения и удаления записей о запчастях, а также управления данными партнёров. Пользователи могут легко просматривать карточки запчастей, которые содержат подробные характеристики, а также фотографии каждой детали. Интуитивно понятный интерфейс приложения позволяет быстро и эффективно управлять всеми записями, обеспечивая точность учёта и лёгкость в навигации. Приложение поддерживает функционал добавления и удаления партнёров, что делает его удобным для ведения учёта поставок и взаимодействия с внешними контрагентами. Возможности изменения темы и языка интерфейса создают комфортные условия для работы в любых условиях." Foreground="White" FontSize="20" TextWrapping="Wrap" MaxWidth="800" Height="389" Width="1044" />
                 </StackPanel>
 

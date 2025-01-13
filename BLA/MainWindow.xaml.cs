@@ -26,7 +26,7 @@ namespace BLA
         public MainWindow()
         {
             InitializeComponent();
-            DetailsPage detailsPage = new DetailsPage();
+            DashboardPage detailsPage = new DashboardPage();
             MainFrame.Content = detailsPage;
 
             if (MainFrame.Content == detailsPage)
@@ -74,6 +74,7 @@ namespace BLA
             partnerPageBtn.Background = brush;
             SettingsBtn.Background = brush1;
             aboutBtn.Background = brush1;
+            detailsBtn.Background = brush1;
         }
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
@@ -107,8 +108,9 @@ namespace BLA
 
         private void homePageBtn_Click(object sender, RoutedEventArgs e)
         {
-            DetailsPage detailsPage = new DetailsPage();
-            MainFrame.Navigate(detailsPage);
+
+            DashboardPage Dashboardpage = new DashboardPage();
+            MainFrame.Navigate(Dashboardpage);
 
             Brush brush = new SolidColorBrush(Color.FromArgb(30, 255, 255, 255));
             Brush brush1 = new SolidColorBrush(Color.FromArgb(1, 255, 255, 255));
@@ -116,7 +118,7 @@ namespace BLA
             partnerPageBtn.Background = brush1;
             SettingsBtn.Background = brush1;
             aboutBtn.Background = brush1;
-            
+            detailsBtn.Background = brush1;
 
         }
 
@@ -131,6 +133,7 @@ namespace BLA
             partnerPageBtn.Background = brush1;
             SettingsBtn.Background = brush;
             aboutBtn.Background = brush1;
+            detailsBtn.Background = brush1;
         }
 
         private void aboutBtn_Click(object sender, RoutedEventArgs e)
@@ -144,6 +147,21 @@ namespace BLA
             partnerPageBtn.Background = brush1;
             SettingsBtn.Background = brush1;
             aboutBtn.Background = brush;
+            detailsBtn.Background = brush1;
+        }
+
+        private void detailsPage_Click(object sender, RoutedEventArgs e)
+        {
+            DetailsPage detailsPage = new DetailsPage();
+            MainFrame.Navigate(detailsPage);
+
+            Brush brush = new SolidColorBrush(Color.FromArgb(30, 255, 255, 255));
+            Brush brush1 = new SolidColorBrush(Color.FromArgb(1, 255, 255, 255));
+            homePageBtn.Background = brush1;
+            partnerPageBtn.Background = brush1;
+            SettingsBtn.Background = brush1;
+            aboutBtn.Background = brush1;
+            detailsBtn.Background = brush;
         }
     }       
 }

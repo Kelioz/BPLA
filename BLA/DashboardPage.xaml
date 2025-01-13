@@ -1,0 +1,73 @@
+﻿<Page x:Class="BLA.DashboardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BLA"
+      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      mc:Ignorable="d" 
+    d:DesignHeight="650" d:DesignWidth="1200" 
+      Title="DashboardPage">
+
+    <Grid Background="#1C1C1C">
+
+        <Border  Background="#7F5A5D69" Width="450" Height="70" Margin="40,65,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="55"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="countDetailsText" Content="3300" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="20" Grid.Column="0" />
+                <Label Content="Общие количество деталей на складе" Foreground="White" VerticalAlignment="Center"  FontSize="20" Grid.Column="1" />
+            </Grid>
+        </Border>
+        <Border  Background="#7F5A5D69" Width="450" Height="70" Margin="40,165,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="55"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="uniqueCountTex" Content="31" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Grid.Column="0"/>
+                <Label Content="Общее количество уникальных деталей " Foreground="White"  FontSize="20" VerticalAlignment="Center" Grid.Column="1" />
+            </Grid>
+        </Border>
+        <Border  Background="#7F5A5D69" Width="450" Height="70" Margin="40,260,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="10">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="55"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="countPartnersText" Content="5" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="20" Grid.Column="0"/>
+                <Label Content="Общие количество партнёров компании" Foreground="White" VerticalAlignment="Center"   FontSize="20" Grid.Column="1"/>
+            </Grid>
+        </Border>
+        <Border  Background="#7F5A5D69" Width="450" Height="70" Margin="40,356,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="10">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="85"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="avgPriceText" Content="33003" Foreground="White" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Center" Grid.Column="0"/>
+                <Label Content="Средняяя цена за деталь" Foreground="White" VerticalAlignment="Center" Grid.Column="1"   FontSize="20"/>
+            </Grid>
+        </Border>
+
+
+        <lvc:PieChart x:Name="pieChart"
+              Series="{Binding PieSeries }" 
+              VerticalAlignment="Top" 
+              HorizontalAlignment="Right" 
+              Width="465" 
+              Height="373"
+              LegendLocation="Bottom" 
+              Foreground="White" 
+              AnimationsSpeed="0" 
+              FontSize="15" Margin="0,65,33,0">
+            <lvc:PieChart.DataTooltip>
+                <lvc:DefaultTooltip FontSize="18" Background="#333333" Foreground="White" Padding="10"/>
+            </lvc:PieChart.DataTooltip>
+
+        </lvc:PieChart>
+        <Label Content="Соотношение количества типов деталей"  Margin="0,10,74,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Right" FontSize="20"/>
+    </Grid>
+</Page>
