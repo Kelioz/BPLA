@@ -10,6 +10,7 @@
       Title="DashboardPage">
 
     <Grid Background="#1C1C1C">
+        <Image Source="./assets/bg2.png" Height="531" Opacity="0.06" />
 
         <Border  Background="#7F5A5D69" Width="450" Height="70" Margin="40,65,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" CornerRadius="10">
             <Grid>
@@ -54,6 +55,7 @@
 
 
         <lvc:PieChart x:Name="pieChart"
+                     Opacity="0.7"
               Series="{Binding PieSeries }" 
               VerticalAlignment="Top" 
               HorizontalAlignment="Right" 

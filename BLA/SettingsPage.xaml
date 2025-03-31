@@ -39,6 +39,7 @@
     </Page.Resources>
     
     <Grid Background="#1C1C1C">
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -66,8 +67,7 @@
                 <ComboBox x:Name="sizeComboBox" Width="200" Margin="0,10,540,20" FontSize="16" SelectionChanged="sizeComboBox_SelectionChanged" HorizontalAlignment="Left" >
                 </ComboBox>
             </StackPanel>
-
-
+            <Image Source="./assets/bg2.png" Height="531"  Opacity="0.06" Margin="0 -140 0 0"/>
 
 
         </StackPanel>

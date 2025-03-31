@@ -40,8 +40,10 @@
     </Page.Resources>
 
     <Grid Background="#1C1C1C" >
+        <Image Source="./assets/bg2.png" Height="531"  Opacity="0.06"  Panel.ZIndex="111"/>
         <Border Background="#222222" CornerRadius="10" Padding="10" BorderBrush="#333333" BorderThickness="1">
-            <Grid>
+            
+            <Grid Opacity="0.8">
                 <!-- Информация о приложении -->
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Height="508" Width="1104"  >
                     <TextBlock Text="О приложении" Foreground="White" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
