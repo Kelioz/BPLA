@@ -12,6 +12,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace BLA
@@ -33,30 +34,39 @@ namespace BLA
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            string username = UsernameBox.Text;
-            string password = PasswordBox.Password;
+                string loginUser = UsernameBox.Text;
+                string password = PasswordBox.Password;
 
-            DB db = new DB();
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            DataTable table = new DataTable();
-            SqlCommand command = new SqlCommand(@"Select * From Users Where login = @login AND password = @password", db.GetConnection());
-            command.Parameters.Add("@login", SqlDbType.VarChar).Value = username;
-            command.Parameters.Add("@password", SqlDbType.VarChar).Value = password;
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-            if (table.Rows.Count > 0)
-            {
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
-                this.Close();
-            }
-            else 
-            {
-                MessageBox.Show("Данные не найдены");
-            }
+                DB dB = new DB();
+                DataTable table = new DataTable();
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                SqlCommand command = new SqlCommand(@"SELECT Role,Login, Password From Users Where login = @uL AND password = @uP", dB.GetConnection());
+                command.Parameters.Add("@uL", SqlDbType.VarChar).Value = loginUser;
+                command.Parameters.Add("@uP", SqlDbType.VarChar).Value = password;
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
+                if (table.Rows.Count > 0)
+                {
+                    string group = table.Rows[0]["role"].ToString();
+                    if (group == "1")
+                    {
+                        MainWindow mainWindowAdmin = new MainWindow(Convert.ToInt32(group));
+                        mainWindowAdmin.Show();
+                        this.Close();
+                }
+                    else if (group == "2")
+                    {
+                        MainWindow mainWindowManager = new MainWindow(Convert.ToInt32(group));
+                        mainWindowManager.Show();
+                        this.Close();
 
+                    }
+                    else
+                    {
+                        MessageBox.Show("У вас нет доступа");
+                    }
 
-
+                }
         }
     }
 }

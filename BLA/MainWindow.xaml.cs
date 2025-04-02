@@ -23,7 +23,8 @@ namespace BLA
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public int role { get; set; }
+        public MainWindow(int role)
         {
             InitializeComponent();
             DashboardPage detailsPage = new DashboardPage();
@@ -34,8 +35,7 @@ namespace BLA
                 homePageBtn.Background = Brushes.DimGray;
             }
 
-
-
+            this.role = role;
         }
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -66,15 +66,23 @@ namespace BLA
 
         private void toPartnersBtn_Click(object sender, RoutedEventArgs e)
         {
-            PartnersPage partnersPage = new PartnersPage();
-            MainFrame.Navigate(partnersPage);
-            Brush brush = new SolidColorBrush(Color.FromArgb(30, 255, 255, 255));
-            Brush brush1 = new SolidColorBrush(Color.FromArgb(1, 255, 255, 255));
-            homePageBtn.Background = brush1;
-            partnerPageBtn.Background = brush;
-            SettingsBtn.Background = brush1;
-            aboutBtn.Background = brush1;
-            detailsBtn.Background = brush1;
+            if (role == 1)
+            {
+                PartnersPage partnersPage = new PartnersPage();
+                MainFrame.Navigate(partnersPage);
+                Brush brush = new SolidColorBrush(Color.FromArgb(30, 255, 255, 255));
+                Brush brush1 = new SolidColorBrush(Color.FromArgb(1, 255, 255, 255));
+                homePageBtn.Background = brush1;
+                partnerPageBtn.Background = brush;
+                SettingsBtn.Background = brush1;
+                aboutBtn.Background = brush1;
+                detailsBtn.Background = brush1;
+            }
+            else
+            {
+                MessageBox.Show("У вас нет прав");
+            }
+
         }
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)
