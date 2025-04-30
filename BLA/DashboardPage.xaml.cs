@@ -63,7 +63,7 @@ namespace BLA
             DB dB = new DB();
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable dataTable = new DataTable();
-            SqlCommand sqlCommand = new SqlCommand(@"Select SUM(Count) as Sum From Datails Where Type = 'Гражданский'", dB.GetConnection());
+            SqlCommand sqlCommand = new SqlCommand(@"Select SUM(Count) as Sum From Datails Where Type = '1'", dB.GetConnection());
             adapter.SelectCommand = sqlCommand;
             adapter.Fill(dataTable);
             int count = Convert.ToInt32(dataTable.Rows[0]["Sum"]);
@@ -75,7 +75,7 @@ namespace BLA
             DB dB = new DB();
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable dataTable = new DataTable();
-            SqlCommand sqlCommand = new SqlCommand(@"Select SUM(Count) as Sum From Datails Where Type = 'Военный'", dB.GetConnection());
+            SqlCommand sqlCommand = new SqlCommand(@"Select SUM(Count) as Sum From Datails Where Type = '2'", dB.GetConnection());
             adapter.SelectCommand = sqlCommand;
             adapter.Fill(dataTable);
             int count = Convert.ToInt32(dataTable.Rows[0]["Sum"]);

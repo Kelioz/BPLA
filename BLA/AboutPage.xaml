@@ -8,36 +8,7 @@
       d:DesignHeight="650" d:DesignWidth="1200"
       Title="AboutPage">
 
-    <Page.Resources>
-        <!-- Стиль для кнопок -->
-        <Style x:Key="DarkButton" TargetType="Button">
-            <Setter Property="Background" Value="#333333"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Padding" Value="5"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="8">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#444444"/>
-                </Trigger>
-                <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="#555555"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </Page.Resources>
+
 
     <Grid Background="#1C1C1C" >
         <Image Source="./assets/bg2.png" Height="531"  Opacity="0.06"  Panel.ZIndex="111"/>

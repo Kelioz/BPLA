@@ -32,7 +32,7 @@ namespace BLA
             DB db = new DB();
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable table = new DataTable();
-            SqlCommand command = new SqlCommand(@"Select id, Name, Count, Type, Price_For_One From Datails", db.GetConnection());
+            SqlCommand command = new SqlCommand(@"Select id, Name, Count, Type, Price_For_One From Details_View", db.GetConnection());
             adapter.SelectCommand = command;
             adapter.Fill(table);
             DetailsData.ItemsSource = table.DefaultView;

@@ -239,3 +239,9 @@ C:\Users\maxkr\Desktop\guber\BPLA\BLA\bin\Debug\SkiaSharp.Views.WPF.pdb
 C:\Users\maxkr\Desktop\guber\BPLA\BLA\bin\Debug\System.Drawing.Common.pdb
 C:\Users\maxkr\Desktop\guber\BPLA\BLA\bin\Debug\System.Drawing.Common.xml
 C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\DashboardPage.baml
+C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\App.baml
+C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\styles\ComboBoxStyles.baml
+C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\styles\TextBoxStyles.baml
+C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\styles\PasswordBoxStyles.baml
+C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\styles\DarkButtonStyles.baml
+C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\styles\LabelStyles.baml

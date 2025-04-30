@@ -7,38 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="550" d:DesignWidth="900"
       Title="InfoPage">
-
-    <Page.Resources>
-        <!-- Style for Dark Buttons -->
-        <Style x:Key="DarkButton" TargetType="Button">
-            <Setter Property="Background" Value="#333333"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Padding" Value="5"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="8">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#444444"/>
-                </Trigger>
-                <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="#555555"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </Page.Resources>
-
+ 
     <Grid Background="Transparent">
         <TextBlock Foreground="White" x:Name="tittleText" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Название " VerticalAlignment="Top" FontSize="25"/>
         <Image x:Name="detailImage" HorizontalAlignment="Left" Height="232" Margin="33,118,0,0" VerticalAlignment="Top" Width="270" Stretch="Fill" />

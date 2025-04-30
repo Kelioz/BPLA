@@ -30,26 +30,50 @@ namespace BLA
             // Заполняем поля
             NameTextBox.Text = name;
             CountTextBox.Text = count.ToString();
-            TypeTextBox.Text = type;
             PriceTextBox.Text = price.ToString();
             getDiscAnd();
+            TypeTextBox.Items.Add("Военный");
+            TypeTextBox.Items.Add("Гражданский");
+            TypeTextBox.Text = type;
+
+        }
+        int getTypeId(string value)
+        {
+            if (value == "Гражданский")
+            {
+                return 1;
+            }
+            else if (value == "Военный")
+            {
+                return 2;
+            }
+            return 1;
         }
 
         void getDiscAnd()
         {
-            DB dB = new DB();
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            DataTable dataTable = new DataTable();
-            SqlCommand command = new SqlCommand(@"Select Description, Characteristics From Datails Where id = @id ", dB.GetConnection());
-            command.Parameters.Add("@id", SqlDbType.Int).Value = this._rowId;
-            adapter.SelectCommand = command;
-            adapter.Fill(dataTable);
+            try
+            {
+                DB dB = new DB();
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                DataTable dataTable = new DataTable();
+                SqlCommand command = new SqlCommand(@"Select Description, Characteristics From Details_View Where id = @id ", dB.GetConnection());
+                command.Parameters.Add("@id", SqlDbType.Int).Value = this._rowId;
+                adapter.SelectCommand = command;
+                adapter.Fill(dataTable);
 
-            string desc = dataTable.Rows[0]["Description"].ToString();
-            string charc = dataTable.Rows[0]["Characteristics"].ToString();
+                string desc = dataTable.Rows[0]["Description"].ToString();
+                string charc = dataTable.Rows[0]["Characteristics"].ToString();
 
-            charBox.Text = charc;
-            discBox.Text = desc;
+                charBox.Text = charc;
+                discBox.Text = desc;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+            }
 
 
         }
@@ -69,7 +93,7 @@ namespace BLA
                 SqlCommand command = new SqlCommand(@"UPDATE Datails SET Name = @name, Count = @count, Type = @type, Price_For_One = @price, Description = @disc, Characteristics = @char WHERE id = @id", db.GetConnection());
                 command.Parameters.AddWithValue("@name", name);
                 command.Parameters.AddWithValue("@count", count);
-                command.Parameters.AddWithValue("@type", type);
+                command.Parameters.AddWithValue("@type", getTypeId(type));
                 command.Parameters.AddWithValue("@price", price);
                 command.Parameters.AddWithValue("@disc", discBox.Text);
                 command.Parameters.AddWithValue("@char", charBox.Text);

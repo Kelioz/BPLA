@@ -3,9 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:BLA"
              StartupUri="LoginWindow.xaml">
-    
+
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="styles/ComboBoxStyles.xaml"/>
+                <ResourceDictionary Source="styles/TextBoxStyles.xaml"/>
+                <ResourceDictionary Source="styles/PasswordBoxStyles.xaml"/>
+                <ResourceDictionary Source="styles/DarkButtonStyles.xaml"/>
+                <ResourceDictionary Source="styles/LabelStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Другие глобальные ресурсы приложения -->
+        </ResourceDictionary>
     </Application.Resources>
-    
 </Application>

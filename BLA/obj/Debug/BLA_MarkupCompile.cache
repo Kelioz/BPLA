@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\maxkr\Desktop\guber\BPLA\BLA\App.xaml
-11-899915123
+16-207980264
 
 17-1162711531
 45688039241
-AboutPage.xaml;AddPartnerWindow.xaml;AddWindow.xaml;DashboardPage.xaml;DetailsPage.xaml;EditWindow.xaml;InfoPage.xaml;LoginWindow.xaml;MainWindow.xaml;PartnersPage.xaml;SettingsPage.xaml;
+AboutPage.xaml;AddPartnerWindow.xaml;AddWindow.xaml;DashboardPage.xaml;DetailsPage.xaml;EditWindow.xaml;InfoPage.xaml;LoginWindow.xaml;MainWindow.xaml;PartnersPage.xaml;SettingsPage.xaml;styles\LabelStyles.xaml;styles\PasswordBoxStyles.xaml;styles\DarkButtonStyles.xaml;styles\TextBoxStyles.xaml;styles\ComboBoxStyles.xaml;
 
 False
 
