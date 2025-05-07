@@ -92,7 +92,7 @@
                                         <Button Content="Удалить" Margin="5,0" Click="DeleteButton_Click" Height="30" Tag="{Binding id}" Width="80" 
                                                 Style="{StaticResource DarkButton}"/>
                                         <Button Content="Подробнее" Margin="5,0" Tag="{Binding id}" Width="80" Height="30" 
-                                                Style="{StaticResource DarkButton}" Click="Button_Click"/>
+                                                Style="{StaticResource DarkButton}" Click="ToInfoPageButton_Click"/>
                                     </StackPanel>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>

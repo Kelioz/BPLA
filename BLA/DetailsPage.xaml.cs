@@ -74,7 +74,8 @@ namespace BLA
                 int id = int.Parse(button.Tag.ToString());
 
                 // Удаляем запись из базы данных
-                MessageBoxResult result = MessageBox.Show("Вы уверены, что хотите удалить эту запись?", "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                MessageBoxResult result = MessageBox.Show("Вы уверены, что хотите удалить эту запись?",
+                                                            "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                 if (result == MessageBoxResult.Yes)
                 {
                     try
@@ -105,7 +106,7 @@ namespace BLA
             addWindow.ShowDialog();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ToInfoPageButton_Click(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
             if (button != null && button.Tag != null)

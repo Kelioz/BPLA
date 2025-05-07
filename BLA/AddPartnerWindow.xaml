@@ -24,7 +24,7 @@
             <Label Content="Адрес" />
             <TextBox x:Name="adressBox" Height="30" />
 
-            <Button Height="40" Width="258" Content="Добавить" Click="Button_Click" Style="{StaticResource DarkButton}" Margin="0,20,0,0" HorizontalAlignment="Center"/>
+            <Button Height="40" Width="258" Content="Добавить" Click="AddPartnerButton_Click" Style="{StaticResource DarkButton}" Margin="0,20,0,0" HorizontalAlignment="Center"/>
         </StackPanel>
     </Grid>
 </Window>

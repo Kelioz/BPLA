@@ -90,7 +90,8 @@ namespace BLA
 
                 // Обновляем базу данных
                 DB db = new DB();
-                SqlCommand command = new SqlCommand(@"UPDATE Datails SET Name = @name, Count = @count, Type = @type, Price_For_One = @price, Description = @disc, Characteristics = @char WHERE id = @id", db.GetConnection());
+                SqlCommand command = new SqlCommand(@"UPDATE Datails SET Name = @name, Count = @count, Type = @type,
+                                Price_For_One = @price, Description = @disc, Characteristics = @char WHERE id = @id", db.GetConnection());
                 command.Parameters.AddWithValue("@name", name);
                 command.Parameters.AddWithValue("@count", count);
                 command.Parameters.AddWithValue("@type", getTypeId(type));
