@@ -31,9 +31,7 @@ namespace BLA
             DB db = new DB();
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable table = new DataTable();
-            SqlCommand command = new SqlCommand(@"Insert Into Partners (Name,
-                                       FIO_Director, Phone, INN, Adress) 
-                                       Values (@Name, @FIO, @Phone, @Inn, @Adress)", db.GetConnection());
+            SqlCommand command = new SqlCommand(@"Insert Into Partners (Name, FIO_Director, Phone, INN, Adress) Values (@Name, @FIO, @Phone, @Inn, @Adress)", db.GetConnection());
             command.Parameters.Add("@Name", SqlDbType.VarChar).Value = nameCompanyBox.Text;
             command.Parameters.Add("@FIO", SqlDbType.VarChar).Value = FIOBox.Text;
             command.Parameters.Add("@Phone", SqlDbType.BigInt).Value = PhoneBox.Text;

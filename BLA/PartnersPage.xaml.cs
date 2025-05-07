@@ -85,8 +85,7 @@ namespace BLA
                 int id = selectedPartner.id;
 
                 // Удаляем запись из базы данных
-                MessageBoxResult result = MessageBox.Show("Вы уверены, что хотите удалить эту запись?", 
-                                                            "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                MessageBoxResult result = MessageBox.Show("Вы уверены, что хотите удалить эту запись?", "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                 if (result == MessageBoxResult.Yes)
                 {
                     try
