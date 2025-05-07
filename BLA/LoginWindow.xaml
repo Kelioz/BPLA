@@ -7,44 +7,7 @@
         mc:Ignorable="d"
         Title="Вход" Height="370" Width="280" WindowStartupLocation="CenterScreen" Icon="assets/icon.ico" MaxHeight="400" MaxWidth="300" MinWidth="280" MinHeight="370">
 
-    <Window.Resources>
-        <!-- Темный стиль для кнопок -->
-        <Style x:Key="DarkButton" TargetType="Button">
-            <Setter Property="Background" Value="#333333"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Padding" Value="5"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="8">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#444444"/>
-                </Trigger>
-                <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Background" Value="#555555"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
 
-
-        <!-- Стиль меток -->
-        <Style TargetType="Label">
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="Margin" Value="0,10,0,5"/>
-            <Setter Property="Foreground" Value="White"/>
-        </Style>
-    </Window.Resources>
 
     <Grid Background="#1C1C1C">
         <!-- Заголовок "Вход" сверху -->

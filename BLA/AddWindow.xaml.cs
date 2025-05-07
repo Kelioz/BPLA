@@ -77,7 +77,8 @@ namespace BLA
                 DB db = new DB();
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 DataTable table = new DataTable();
-                SqlCommand cmd = new SqlCommand(@"Insert Into Datails (Name, Count, Type, Price_For_One, Description, Characteristics) Values (@Name, @Count, @Type, @PFO, @Disc, @Char )", db.GetConnection());
+                SqlCommand cmd = new SqlCommand(@"Insert Into Datails (Name, Count, Type, Price_For_One, 
+                                    Description, Characteristics) Values (@Name, @Count, @Type, @PFO, @Disc, @Char )", db.GetConnection());
                 cmd.Parameters.Add("@Name", SqlDbType.VarChar).Value = NameTextBox.Text;
                 cmd.Parameters.Add("@Count", SqlDbType.Int).Value = Convert.ToInt32(CountTextBox.Text);
                 cmd.Parameters.Add("@Type", SqlDbType.VarChar).Value = getTypeId(TypeTextBox.Text);

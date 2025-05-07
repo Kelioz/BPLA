@@ -12,8 +12,10 @@
 
     <Grid Background="#1C1C1C" Margin="0,0,-12,0">
         <!-- Панель для кнопок -->
+        <!-- В StackPanel с кнопками добавьте новую кнопку -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,9,20,0">
             <Button x:Name="addPartnerBtn" Content="Добавить" Height="40" Width="120" Style="{StaticResource DarkButton}" Click="addPartnerBtn_Click"/>
+            <Button x:Name="editPartnerBtn" Content="Редактировать" Height="40" Width="120" Margin="10,0,0,0" Style="{StaticResource DarkButton}" Click="editPartnerBtn_Click" IsEnabled="False"/>
             <Button x:Name="updateBtn" Content="Обновить" Height="40" Width="120" Margin="10,0,0,0" Style="{StaticResource DarkButton}" Click="updateBtn_Click"/>
             <Button x:Name="deletePartnerBtn" Content="Удалить" Height="40" Width="120" Margin="10,0,0,0" Style="{StaticResource DarkButton}" Click="deletePartnerBtn_Click" IsEnabled="False"/>
         </StackPanel>

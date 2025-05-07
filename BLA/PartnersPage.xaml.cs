@@ -65,7 +65,17 @@ namespace BLA
         private void partnersList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             selectedPartner = partnersList.SelectedItem as Parnetrs;
-            deletePartnerBtn.IsEnabled = selectedPartner != null; // Активировать кнопку, если выбран элемент
+            deletePartnerBtn.IsEnabled = selectedPartner != null;
+            editPartnerBtn.IsEnabled = selectedPartner != null;
+        }
+        private void editPartnerBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (selectedPartner != null)
+            {
+                EditPartnerWindow editWindow = new EditPartnerWindow(selectedPartner);
+                editWindow.ShowDialog();
+                InitTable(); 
+            }
         }
 
         private void deletePartnerBtn_Click(object sender, RoutedEventArgs e)

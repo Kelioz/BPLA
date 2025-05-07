@@ -59,11 +59,7 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#333333"/>
-                </Trigger>
-            </Style.Triggers>
+
         </Style>
     </Window.Resources>
 
@@ -89,12 +85,12 @@
         <DockPanel>
             <StackPanel Background="#222222" Width="200" VerticalAlignment="Stretch" HorizontalAlignment="Left" DockPanel.Dock="Left" >
                 <Image Source="assets/iconW.png" Height="100" Margin="0,10,0,20" HorizontalAlignment="Center" />
-                <Label Content="Fly Engine" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="16" Margin="0,-20,0,0"/>
-                <Button x:Name="homePageBtn" Content="Главная" Style="{StaticResource DarkSidebarButton}" Click="homePageBtn_Click" FontSize="20"/>
-                <Button x:Name="detailsBtn" Content="Детали" Style="{StaticResource DarkSidebarButton}"  FontSize="20" Click="detailsPage_Click"/>
-                <Button x:Name="partnerPageBtn" Content="Партнёры" Style="{StaticResource DarkSidebarButton}" Click="toPartnersBtn_Click" FontSize="20"/>
-                <Button x:Name="SettingsBtn" Content="Настройки" Style="{StaticResource DarkSidebarButton}" FontSize="20" Click="SettingsBtn_Click"/>
-                <Button x:Name="aboutBtn" Content="О приложении" Style="{StaticResource DarkSidebarButton}" FontSize="20" Click="aboutBtn_Click"/>
+                <Label Content="Fly Engine" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="16" Margin="0,-20,0,0" Cursor="Hand"/>
+                <Button x:Name="homePageBtn" Content="Главная" Style="{StaticResource DarkSidebarButton}" Click="homePageBtn_Click" FontSize="20" Cursor="Hand"/>
+                <Button x:Name="detailsBtn" Content="Детали" Style="{StaticResource DarkSidebarButton}"  FontSize="20" Click="detailsPage_Click" Cursor="Hand"/>
+                <Button x:Name="partnerPageBtn" Content="Партнёры" Style="{StaticResource DarkSidebarButton}" Click="toPartnersBtn_Click" FontSize="20" Cursor="Hand"/>
+                <Button x:Name="SettingsBtn" Content="Настройки" Style="{StaticResource DarkSidebarButton}" FontSize="20" Click="SettingsBtn_Click" Cursor="Hand"/>
+                <Button x:Name="aboutBtn" Content="О приложении" Style="{StaticResource DarkSidebarButton}" FontSize="20" Click="aboutBtn_Click" Cursor="Hand"/>
             </StackPanel>
 
             <!-- Основной контент -->
