@@ -152,6 +152,9 @@
     <Compile Include="EditPartnerWindow.xaml.cs">
       <DependentUpon>EditPartnerWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ServerConfigWindow.xaml.cs">
+      <DependentUpon>ServerConfigWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
@@ -224,6 +227,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="PartnersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ServerConfigWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -306,6 +313,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\bg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="connection.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

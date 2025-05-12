@@ -247,3 +247,5 @@ C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\styles\DarkButtonStyles.baml
 C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\styles\LabelStyles.baml
 C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\EditPartnerWindow.g.cs
 C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\EditPartnerWindow.baml
+C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\ServerConfigWindow.g.cs
+C:\Users\maxkr\Desktop\guber\BPLA\BLA\obj\Debug\ServerConfigWindow.baml

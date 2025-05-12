@@ -31,42 +31,68 @@ namespace BLA
         {
             MessageBox.Show("Позвоните системному администратору на номер +7 999 999 99 99", "Помощь" , MessageBoxButton.OK, MessageBoxImage.Information);
         }
-
+        private void configBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ServerConfigWindow configWindow = new ServerConfigWindow();
+            configWindow.ShowDialog();
+        }
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
                 string loginUser = UsernameBox.Text;
                 string password = PasswordBox.Password;
 
-                DB dB = new DB();
-                DataTable table = new DataTable();
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                SqlCommand command = new SqlCommand(@"SELECT Role,Login, Password From Users Where login = @uL AND password = @uP", dB.GetConnection());
-                command.Parameters.Add("@uL", SqlDbType.VarChar).Value = loginUser;
-                command.Parameters.Add("@uP", SqlDbType.VarChar).Value = password;
-                adapter.SelectCommand = command;
-                adapter.Fill(table);
-                if (table.Rows.Count > 0)
+                // Validate input
+                if (string.IsNullOrWhiteSpace(loginUser) || string.IsNullOrWhiteSpace(password))
                 {
-                    string group = table.Rows[0]["role"].ToString();
-                    if (group == "1")
-                    {
-                        MainWindow mainWindowAdmin = new MainWindow(Convert.ToInt32(group));
-                        mainWindowAdmin.Show();
-                        this.Close();
+                    MessageBox.Show("Введите имя пользователя и пароль", "Ошибка",
+                                  MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
                 }
-                    else if (group == "2")
+                try
+                {
+                    DB dB = new DB();
+                    DataTable table = new DataTable();
+                    SqlDataAdapter adapter = new SqlDataAdapter();
+                    SqlCommand command = new SqlCommand(@"SELECT Role,Login, Password From Users Where login = @uL AND password = @uP", dB.GetConnection());
+                    command.Parameters.Add("@uL", SqlDbType.VarChar).Value = loginUser;
+                    command.Parameters.Add("@uP", SqlDbType.VarChar).Value = password;
+                    adapter.SelectCommand = command;
+                    adapter.Fill(table);
+                    if (table.Rows.Count > 0)
                     {
-                        MainWindow mainWindowManager = new MainWindow(Convert.ToInt32(group));
-                        mainWindowManager.Show();
-                        this.Close();
+                        string group = table.Rows[0]["role"].ToString();
+                        if (group == "1")
+                        {
+                            MainWindow mainWindowAdmin = new MainWindow(Convert.ToInt32(group));
+                            mainWindowAdmin.Show();
+                            this.Close();
+                        }
+                        else if (group == "2")
+                        {
+                            MainWindow mainWindowManager = new MainWindow(Convert.ToInt32(group));
+                            mainWindowManager.Show();
+                            this.Close();
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("У вас нет доступа");
+                        }
 
                     }
-                    else
-                    {
-                        MessageBox.Show("У вас нет доступа");
-                    }
+                }catch (SqlException sqlEx){
+                MessageBox.Show($"Ошибка базы данных: {sqlEx.Message}\nПроверьте подключение к серверу.",
+                              "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }}
+            catch (Exception generalEx)
+            {
+                MessageBox.Show($"Критическая ошибка: {generalEx.Message}",
+                              "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
 
-                }
+
         }
     }
 }

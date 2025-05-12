@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/bg.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("connection.txt")]
 
 
