@@ -104,7 +104,9 @@
                     <Button x:Name="AddDetailsBtn" Content="Добавить" Height="40" Width="120" Margin="0,0,0,10"
                             Click="AddDetailsBtn_Click" Style="{StaticResource DarkButton}"/>
                     <Button x:Name="updateBtn" Content="Обновить" Height="40" Width="120" 
-                            Click="updateBtn_Click" Style="{StaticResource DarkButton}"/>
+                            Click="updateBtn_Click" Style="{StaticResource DarkButton}" Margin="0,0,0,10"/>
+                    <Button x:Name="pdfBtn" Content="Отчёт" Height="40" Width="120" 
+                            Click="PDFBTN_Click" Style="{StaticResource DarkButton}" Cursor="Hand" />
                 </StackPanel>
             </Grid>
         </Border>
